@@ -1,5 +1,15 @@
 SET search_path TO sollicitaties;
 
+CREATE TABLE roles (
+   role_id SERIAL PRIMARY KEY,
+   role varchar(8) not NULL DEFAULT 'student'
+);
+
+CREATE TABLE formations (
+   formation_id SERIAL PRIMARY KEY,
+   formation varchar(128) NOT NULL
+);
+
 CREATE TABLE users (
    r_u_number varchar(8) PRIMARY KEY,
    name varchar(50) NOT NULL,
@@ -9,16 +19,6 @@ CREATE TABLE users (
    CONSTRAINT fk_formation FOREIGN KEY (formation_id) REFERENCES formations(formation_id),
    photo_url varchar(512) NOT NULL DEFAULT 'temp_link',
    hashed_password varchar(512) NOT NULL DEFAULT 't'
-);
-
-CREATE TABLE roles (
-   role_id SERIAL PRIMARY KEY,
-   role varchar(8) not NULL DEFAULT 'student'
-);
-
-CREATE TABLE formations (
-   formation_id SERIAL PRIMARY KEY,
-   formation varchar(128) NOT NULL
 );
 
 CREATE TABLE videos (
