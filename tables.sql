@@ -5,8 +5,8 @@ CREATE TABLE users (
    name varchar(50) NOT NULL,
    surname varchar(50) NOT NULL,
    email varchar(100) NOT NULL,
-   CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(role_id)
-   CONSTRAINT fk_formation FOREIGN KEY (formation) REFERENCES formations(formation_id)
+   CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(role_id),
+   CONSTRAINT fk_formation FOREIGN KEY (formation) REFERENCES formations(formation_id),
    photo_url varchar(512) NOT NULL DEFAULT 'temp_link',
    hashed_password varchar(512) NOT NULL DEFAULT 't'
 );
@@ -18,7 +18,7 @@ CREATE TABLE roles (
 
 CREATE TABLE formations (
    formation_id SERIAL PRIMARY KEY,
-   formation varchar(128) NOT NULL,
+   formation varchar(128) NOT NULL
 );
 
 CREATE TABLE videos (
