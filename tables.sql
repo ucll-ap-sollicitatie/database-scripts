@@ -37,7 +37,7 @@ CREATE TABLE comments (
    text varchar(256) NOT NULL,
    feedback boolean NOT NULL,
    date TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
-   author varchar(7) NOT NULL,
+   author varchar(8) NOT NULL,
    video_id integer NOT NULL,
    CONSTRAINT fk_video FOREIGN KEY (video_id) REFERENCES videos(video_id)
 );
