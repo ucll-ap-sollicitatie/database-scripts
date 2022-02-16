@@ -5,8 +5,8 @@ CREATE TABLE users (
    name varchar(50) NOT NULL,
    surname varchar(50) NOT NULL,
    email varchar(100) NOT NULL,
-   CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(role_id),
-   CONSTRAINT fk_formation FOREIGN KEY (formation) REFERENCES formations(formation_id),
+   CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES roles(role_id),
+   CONSTRAINT fk_formation FOREIGN KEY (formation_id) REFERENCES formations(formation_id),
    photo_url varchar(512) NOT NULL DEFAULT 'temp_link',
    hashed_password varchar(512) NOT NULL DEFAULT 't'
 );
@@ -48,7 +48,7 @@ CREATE TABLE question_categories (
 CREATE TABLE questions (
    question_id SERIAL PRIMARY KEY,
    question varchar(256) NOT NULL,
-   CONSTRAINT fk_category FOREIGN KEY (category) REFERENCES categories(category)
+   CONSTRAINT fk_category FOREIGN KEY (category_id) REFERENCES categories(category)
 );
 
 GRANT ALL ON comments TO r0790963, r0746926, r0709770, r0790938;
