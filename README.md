@@ -1,3 +1,3 @@
 # Database scripts
 
-Scripts for the 'slim op sollicitaties' database
+Markdown files containing database queries for the 'Slim op sollicitatie' back-end.
