@@ -1,3 +1,6 @@
+# ALL ESSENTIAL INSERTS FOR SOS API
+
+```
 insert into roles (role) values('Student');
 insert into roles (role) values('Lector');
 insert into roles (role) values('Admin');
@@ -56,3 +59,4 @@ INSERT INTO questions (question, question_category_id) VALUES ('Wat is het versc
 INSERT INTO questions (question, question_category_id) VALUES ('Wat is uw benadering van debugging?', 5);
 INSERT INTO questions (question, question_category_id) VALUES ('Welk sorteeralgoritme moet je gebruiken en wanneer?', 5);
 INSERT INTO questions (question, question_category_id) VALUES ('Wat is het verschil tussen een acceptatietest en een functionele test?', 5);
+```
