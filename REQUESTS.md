@@ -1,4 +1,4 @@
-# All possible requests for SOS api
+# ALL POSSIBLE REQUESTS FOR SOS API
 
 **[Users](#Users) | [Comments](#Comments) | [Videos](#Videos) | [Questions](#Questions) | [Formations](#Formations) | [Roles](#Roles) | [Categories](#Categories) | [Preferences](#Preferences) | [Tasks](#Tasks) | [Favorites](#Favorites)**
 
