@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "c4713b1d-7897-4f96-9dd4-2bfb44676451",
+		"name": "SOC question_categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/question-categories",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get category by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/question-categories/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get question category by category id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/question-categories/category/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories",
+						"category",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"category\": 10,\r\n    \"description\": \"test\"\r\n]"
+				},
+				"url": {
+					"raw": "localhost:3001/question-categories",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"category\": 10,\r\n    \"description\": \"test2\"\r\n]"
+				},
+				"url": {
+					"raw": "localhost:3001/question-categories/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/question-categories/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"question-categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

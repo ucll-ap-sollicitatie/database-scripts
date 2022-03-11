@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "f561f634-a3c8-461e-87d2-de0d8ed3704e",
+		"name": "SOC roles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/roles",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"roles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
